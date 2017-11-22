@@ -40,4 +40,20 @@ describe("Arrays", () => {
                 { name: "Charlie", paid: true, fee: 1350}])
         })
     })
+
+    describe("Reduce", () => {
+        it("Can be used as a summation of all elements in an array", () => {
+            let input = [1,2,3,4]
+            let sum = TODO
+
+            sum.should.equal(10)
+        })
+
+        it("Can be used for all other sorts of accumulation", () => {
+            let input = [1,2,3,4]
+            let concatenated = TODO
+
+            concatenated.should.equal("Concatenated: 1234")
+        })
+    })
 })
