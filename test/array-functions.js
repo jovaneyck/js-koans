@@ -1,6 +1,11 @@
 let should = require('chai').should();
 let TODO = []
 describe("Arrays", () => {
+    let users = [
+        { name: "Bob", paid: false},
+        { name: "Alice", paid: true}
+    ]
+
     describe("Map", () => {
         it("Applies any function over all elements", () =>{
             let input = [2,3,4,5]
@@ -8,6 +13,11 @@ describe("Arrays", () => {
             let triples = TODO
 
             triples.should.eql([6,9,12,15])
+        })
+
+        it("Can be used to extract and transform rich objects", () =>{
+            let userNamesLowercase = TODO
+            userNamesLowercase.should.eql(["bob", "alice"])
         })
     })
 
@@ -22,11 +32,6 @@ describe("Arrays", () => {
         })
 
         it("Can filter out irrelevant elements using any given predicate", () => {
-            let users = [
-                { name: "Bob", paid: false},
-                { name: "Alice", paid: true}
-            ]
-
             let paidUsers = TODO
 
             paidUsers.should.eql([{name: "Alice", paid: true}])
