@@ -1,0 +1,23 @@
+{
+  "name": "js-koans",
+  "version": "1.0.0",
+  "description": "Koans to get familiar with various javascript concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovaneyck/js-koans.git"
+  },
+  "author": "Jo Van Eyck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jovaneyck/js-koans/issues"
+  },
+  "homepage": "https://github.com/jovaneyck/js-koans#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
