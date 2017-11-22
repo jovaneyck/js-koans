@@ -2,8 +2,9 @@ let should = require('chai').should();
 let TODO = []
 describe("Arrays", () => {
     let users = [
-        { name: "Bob", paid: false},
-        { name: "Alice", paid: true}
+        { name: "Bob", paid: false, fee: 1500},
+        { name: "Alice", paid: true, fee: 1200},
+        { name: "Charlie", paid: true, fee: 1350}
     ]
 
     describe("Map", () => {
@@ -34,7 +35,9 @@ describe("Arrays", () => {
         it("Can filter out irrelevant elements using any given predicate", () => {
             let paidUsers = TODO
 
-            paidUsers.should.eql([{name: "Alice", paid: true}])
+            paidUsers.should.eql([
+                { name: "Alice", paid: true, fee: 1200},
+                { name: "Charlie", paid: true, fee: 1350}])
         })
     })
 })
