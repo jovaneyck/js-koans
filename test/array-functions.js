@@ -18,6 +18,7 @@ describe("Arrays", () => {
 
         it("Can be used to extract and transform rich objects", () =>{
             let userNamesLowercase = TODO
+            
             userNamesLowercase.should.eql(["bob", "alice"])
         })
     })
@@ -44,6 +45,7 @@ describe("Arrays", () => {
     describe("Reduce", () => {
         it("Can be used as a summation of all elements in an array", () => {
             let input = [1,2,3,4]
+
             let sum = TODO
 
             sum.should.equal(10)
