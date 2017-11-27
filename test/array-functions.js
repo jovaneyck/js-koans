@@ -19,7 +19,7 @@ describe("Arrays", () => {
         it("Can be used to extract and transform rich objects", () =>{
             let userNamesLowercase = TODO
             
-            userNamesLowercase.should.eql(["bob", "alice"])
+            userNamesLowercase.should.eql(["bob", "alice", "charlie"])
         })
     })
 
