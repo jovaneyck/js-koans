@@ -81,5 +81,5 @@ describe("statement function", () => {
     
             s.should.be.equal(expected)
         })
+        })
     })
-})
